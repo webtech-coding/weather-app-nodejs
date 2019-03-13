@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    
+}
+.wrapper{    
+    font-size: 20px;
+    height: 100vh;
+    width: 100vw;
+  
+    
+}
+
+.container{
+    height: 600px;
+    width: 450px;
+    left: 50%;
+    top: 50%;
+    background: #29c3c9;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 20px 2px rgba(97, 97, 97,.5);
+    color: #fff;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+/**The switch slider*/
+.switch{
+    display: inline-block;
+    height: 24px;
+    width: 60px;
+    background: #02858a;;
+   
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.check{
+    display: none;
+}
+
+.slider{
+    height: 16px;
+    width: 25px;
+    background: #fff;
+    z-index: 1;
+    top: 3px;
+    right: 4px;
+    position: absolute;
+    transition: all .4s ease;
+}
+.celcius{
+    font-size: 10px;
+    margin-left: 5px;
+}
+.fahren{
+    font-size: 10px;
+    margin-left: 15px;
+}
+
+
+.check:checked + span{    
+    transform: translateX(-26px);
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+      
+}
+.search{
+    height: 24px;
+    border: 1px solid rgba(0,0,0,.1);
+    outline: none;
+    width: 250px;
+    padding-left: 10px;
+}
+.language{
+    height: 24px;
+    outline: none;
+    width: 60px;
+    background: #02858a;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    margin-right: -5px;
+    padding-left: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.submit{
+    height: 24px;
+    width: 30px;
+    border: 1px solid rgba(0,0,0,.1);
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.degree{
+    text-align: center;
+    position: relative;
+    padding-top: 80px;
+}
+
+.degree-num{
+    font-size: 100px;
+    position: relative;
+}
+.degree-letter{
+   font-size: 34px;
+   position: absolute;
+   top: 24px;
+}
+.min-max{
+    margin-bottom: 10px;
+}
+.min{
+   margin-right: 30px;
+   font-weight: 600;
+}
+.max{
+    
+}
+.city{
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.weather{
+    text-align: center;
+    font-size: 80px;
+    padding: 20px 0px;
+    
+}
+.fans{
+    width: 50px;
+    animation: fan 1s linear infinite;
+}
+.description{
+    padding: 20px 0px;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@keyframes fan{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.pillar{
+    height: 50px;
+    display: block;
+    margin-top: -30px;
+    margin-left: -2px;
+}
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.2);
+}
+.wind{
+    display: flex;
+    justify-content: space-around;
+    background: #29c3c9;
+    padding: 20px 0px;
+}

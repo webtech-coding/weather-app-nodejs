@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/themify-icons.css">
+    <link rel="stylesheet" type="text/css" href="/css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/weather-icons-wind.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    </div>
+     <div class="container">
+            <header class="header">
+                <label class="switch" id="switch">
+                    <input type="checkbox" name="check" class="check">
+                    <span class="slider"></span>
+                    <span class="celcius">&deg;C</span>
+                    <span class="fahren">&deg;F</span>
+                </label>
+                <form method="GET" class="form">
+                    <input type="text" placeholder="search weather by city" name="search" class="search">
+                    <button type="submit" class="submit"><span class="ti-search"></span></button>
+                </form>
+            </header>
+            <section class="temperature">
+                <div class="degree">
+                    <div class="degree-num">
+                        <span id="temperature">{{temperature}}</span><span class="degree-letter"></span>
+                    </div>
+                    <div class="description">{{main}}</div>
+                    <div class="min-max">
+                        <span class="min"><i class="ti-arrow-up"> <span id="min">{{min}}</span></i></span>
+                        <span class="man"><i class="ti-arrow-down"><span id="max"> {{max}}</span></i></span>
+                    </div>
+                </div>
+                <div class="weather">
+                    <!--<i class="wi wi-day-cloudy"></i>-->
+                     <div class="city">
+                        {{city}}, {{country}}
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="wind">
+                    <span> <i class="wi wi-strong-wind"></i> {{wind}}m/s</span>
+                    <span> <i class="wi wi-humidity"></i> {{humidity}}</span>
+                    <span> <i class="wi wi-cloudy"></i> {{cloud}}%</span>
+                    
+                </div>
+            </footer>
+          
+        </div>
+        <script src="/js/degreeConverter.js"></script>
+</body>
+</html>
